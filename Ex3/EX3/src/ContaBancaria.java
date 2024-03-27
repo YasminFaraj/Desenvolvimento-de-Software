@@ -9,7 +9,4 @@ public class ContaBancaria {
         this.nomeTitular = nomeTitular;
         this.saldo = 0;
     }
-
-
-    
 }
