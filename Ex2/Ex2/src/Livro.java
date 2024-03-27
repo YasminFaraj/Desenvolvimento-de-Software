@@ -8,6 +8,11 @@ public class Livro {
         autor = aut;
         this.ano = ano;
     }
-
     
+    void exibir_info() {
+        System.out.println("Livros:");
+        System.out.println("Título: " + titulo);
+        System.out.println("Autor: " + autor);
+        System.out.println("Ano: " + ano);
+    }
 }
