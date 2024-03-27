@@ -4,6 +4,5 @@ public class Main {
         ContaBancaria conta = new ContaBancaria(1, "Yasmin Faraj");
 
         System.out.println(conta);
-
     }
 }
