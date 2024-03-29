@@ -3,13 +3,13 @@ public class ContaBancaria {
     private String nomeTitular;
     private float saldo;
 
-    public ContaBancaria(int numeroConta, String nomeTitular){
+    ContaBancaria(int numeroConta, String nomeTitular){
         this.numeroConta = numeroConta;
         this.nomeTitular = nomeTitular;
         this.saldo = 0;
     }
 
-    public void depositar(float valor){
+    void setDepositar(float valor){
         if(valor > 0){
             this.saldo += valor;
             System.out.println("Depósito realizado!");
@@ -19,7 +19,11 @@ public class ContaBancaria {
         }
     }
 
-    public void sacar(float valor){
+    float getDepositar(){
+        return this.getSaldo();
+    }
+
+    void setSacar(float valor){
         if(valor > 0 && valor <= saldo){
             this.saldo -= valor;
             System.out.println("Saque no valor " + valor + " realizado.");
@@ -28,7 +32,11 @@ public class ContaBancaria {
         }
     }
 
-    public float getSaldo(){
+    float getSacar(){
+        return this.getSaldo();
+    }
+
+    float getSaldo(){
         return this.saldo;
     }
 
