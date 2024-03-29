@@ -48,12 +48,14 @@ public class Jogador {
         System.out.println("Nível de " + this.nome + " aumentado.");
     }
 
-    private String exibirInfo() {
-        return ""+ nome + "\n" + "Pontuação: " + pontuacao + "\n" + "Nível: " + nivel;
+    private void dados(){
+        System.out.println("Nome: " + this.nome);
+        System.out.println("Pontuação: " + this.pontuacao);
+        System.out.println("Nível: " + this.nivel);
     }
 
-    String exibirJogador() {
-        return exibirInfo();
+    void exibirJogador(){
+        dados();
     }
 }
 
