@@ -1,8 +1,8 @@
 public class Contato {
     private String nome;
-    private int telefone;
+    private String telefone;
 
-    Contato(String nome, int telefone){
+    Contato(String nome, String telefone){
         this.nome = nome;
         this.telefone = telefone;
     }
@@ -15,11 +15,11 @@ public class Contato {
         return this.nome;
     }
 
-    void setTelefone(int telefone){
+    void setTelefone(String telefone){
         this.telefone = telefone;
     }
 
-    int getTelefone(){
+    String getTelefone(){
         return this.telefone;
     }
 }
